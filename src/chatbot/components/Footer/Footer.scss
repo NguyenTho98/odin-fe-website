@@ -1,0 +1,46 @@
+.footer-chatbot{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    .footer-content{
+        .item{
+            cursor: pointer;
+            text-align: center;
+            width: calc((100%)/4);
+            font-size: 14px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+        .current-active{
+            color: #0088FF;
+            background: #E6F4FF;
+        }
+        .home{
+            border-bottom-left-radius: 18px;
+            &:hover{
+                color: #0088FF;
+                background: #E6F4FF;
+            }
+        }
+        .library{
+            &:hover{
+                color: #0088FF;
+                background: #E6F4FF;
+            }
+        }
+        .course{
+            &:hover{
+                color: #0088FF;
+                background: #E6F4FF;
+            }
+        }
+        .conversation{
+            border-bottom-right-radius: 18px;
+            &:hover{
+                color: #0088FF;
+                background: #E6F4FF;
+            }
+        }
+    }
+}

@@ -1,0 +1,196 @@
+.wrappre-home{
+    overflow-y: auto;
+    height: 470px;
+    margin-right: 2px;
+    &::-webkit-scrollbar {
+        background: #fff;
+        width: 7px;
+        height: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #c4c4c4;
+        border-radius: 5px;
+        width: 2px;
+    }
+    .introduce{
+        padding: 10px 20px;
+        .introduce-image{
+            height: 115px;
+            width: 100px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .comments{
+            width: calc((100% - 100px));
+            .content{
+                position: relative;
+                font-size: 12px;
+                width: 90%;
+                border: 1px solid;
+                border-radius: 10px;
+                padding: 20px 10px;
+                color: white;
+                background-color: #747070;
+                margin-left: 10px;
+                margin-top: 20px;
+                &::before{
+                    content: "";
+                    display: block;
+                    width: 0; 
+                    height: 0; 
+                    border-top: 12px solid transparent;
+                    border-bottom: 0px solid transparent;
+                    border-right: 12px solid #727272; 
+                    position: absolute;
+                    top: 30px;
+                    left: -12px;
+                }
+            }
+        }
+    }
+    .hr{
+        width: 70%;
+        margin: 0 auto;
+        opacity: 1;
+        margin-top: 5px;
+    }
+    .ratings{
+        padding: 10px 20px;
+        .title{
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .ratings-content{
+            width: 80%;
+            margin: auto;
+            .rattings-image{
+                height: 80px;
+                width: 110px;
+                margin-top: 10px;
+                margin-right: 25px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .comments{
+                .text-commnnts{
+                    position: relative;
+                    width: 80%;
+                    font-size: 12px;
+                    border: 1px solid;
+                    border-radius: 10px;
+                    padding: 10px 10px;
+                    color: white;
+                    background-color: #747070;
+                    &::before{
+                        content: "";
+                        display: block;
+                        width: 0; 
+                        height: 0; 
+                        border-top: 12px solid transparent;
+                        border-bottom: 0px solid transparent;
+                        border-right: 12px solid #727272; 
+                        position: absolute;
+                        top: 30px;
+                        left: -12px;
+                    }
+                }
+                .armorial{
+                    font-size: 14px;
+                    margin-top: 5px;
+                    span{
+                        font-weight: 600;
+                        margin-left: 5px;
+                    }
+                }
+                .experience{
+                    font-size: 14px;
+                    span{
+                        font-weight: 600;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .target-day{
+        padding: 10px 20px;
+        .title{
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .star{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    .question{
+        background-color: #ffc1072e;
+        padding: 20px 40px;
+        .question-title{
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .question-content{
+            .content-item{
+                // justify-content: space-between;
+                margin-bottom: 10px;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                display: flex;
+                .result{
+                    width: 150px;
+                    border-radius: 5px;
+                    padding: 5px 10px;
+                    background-color: #fff;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+                    // &:hover{
+                    //     color: #0088FF;
+                    //     background: #E6F4FF;
+                    // }
+                }
+                .resultSuccess{
+                    color: #000;
+                    animation: blinkingTextSuccess 2s infinite;
+                }
+                @keyframes blinkingTextSuccess{
+                    0%		{ color: #0088FF; background-color: #fff;}
+                    10%		{ color: #fff; background-color: #65b2ec;}
+                    20%		{ color: #0088FF; background-color: #fff;}
+                    30%		{ color: #fff; background-color: #65b2ec;}
+                    40%		{ color: #0088FF; background-color: #fff;}
+                    50%		{ color: #fff; background-color: #65b2ec;}
+                    60%		{ color: #0088FF; background-color: #fff;}
+                    70%		{ color: #fff; background-color: #65b2ec;}
+                    80%		{ color: #0088FF; background-color: #fff;}
+                    90%		{ color: #fff; background-color: #65b2ec;}
+                    100%	{ color: #0088FF; background-color: #fff;}
+                }
+                .resultWrong{
+                    color: #000;
+                    animation: blinkingWrong 2s infinite;
+                }
+                @keyframes blinkingWrong{
+                    0%		{ color: rgb(245, 68, 68); background-color: #fff;}
+                    10%		{ color: #fff; background-color: rgb(241, 150, 150);}
+                    20%		{ color: rgb(245, 68, 68); background-color: #fff;}
+                    30%		{ color: #fff; background-color: rgb(241, 150, 150);}
+                    40%		{ color: rgb(245, 68, 68); background-color: #fff;}
+                    50%		{ color: #fff; background-color: rgb(241, 150, 150);}
+                    60%		{ color: rgb(243, 57, 57); background-color: #fff;}
+                    70%		{ color: #fff; background-color: rgb(241, 150, 150);}
+                    80%		{ color: rgb(243, 57, 57); background-color: #fff;}
+                    90%		{ color: #fff; background-color: rgb(241, 150, 150);}
+                    100%	{ color: rgb(243, 57, 57); background-color: #fff;}
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.course-wrapper{
+    overflow-y: auto;
+    height: 470px;
+    margin-right: 2px;
+    &::-webkit-scrollbar {
+        background: #fff;
+        width: 7px;
+        height: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #c4c4c4;
+        border-radius: 5px;
+        width: 2px;
+    }
+    .course-content{
+        .item{
+            width: 100%;
+            height: 200px;
+            padding: 10px 20px;
+            img{
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

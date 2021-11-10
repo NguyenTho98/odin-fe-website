@@ -1,0 +1,28 @@
+.site-footer{
+    .footer-info{
+        .footer-logo{
+            align-items: center;
+            .title{
+                font-weight: 600;
+                font-size: 20px;
+                width: 250px;
+                margin-left: 10px;
+            }
+        }
+        .icon-content{
+            min-width: 200px;
+            text-align: left;
+        }
+    }
+    .footer-address{
+       .item{
+           margin-bottom: 25px;
+        .content{
+            margin-bottom: 10px;
+            .icon{
+                margin-right: 5px;
+            }
+        }
+       }
+    }
+}

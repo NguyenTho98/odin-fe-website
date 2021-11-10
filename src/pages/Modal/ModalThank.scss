@@ -1,0 +1,24 @@
+.modal-thank{
+    min-width: 650px;
+    .close{
+        position: absolute;
+        top:10px;
+        right: 15px;
+        cursor: pointer;z-index: 99;
+    }
+    .icon-thank{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .text-success{
+        text-align: center;
+        padding: 10px 0px;
+    }
+    .content-text{
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+}

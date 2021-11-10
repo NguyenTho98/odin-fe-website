@@ -1,0 +1,36 @@
+.library-wrapper{
+    overflow-y: auto;
+    height: 470px;
+    margin-right: 2px;
+    &::-webkit-scrollbar {
+        background: #fff;
+        width: 7px;
+        height: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #c4c4c4;
+        border-radius: 5px;
+        width: 2px;
+    }
+    .title{
+        font-weight: 600;
+        font-size: 25px;
+        padding: 5px 10px;
+    }
+    .content{
+        padding: 5px 10px;
+    }
+    .blog-more{
+        .title{
+            font-weight: 400;
+            font-size: 20px;
+            padding: 5px 10px;
+        }
+        .item-more{
+            text-decoration: none;
+            padding-left: 10px;
+            cursor: pointer;
+        }
+    }
+}
