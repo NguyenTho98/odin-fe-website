@@ -1,0 +1,31 @@
+.banner-wrapper {
+  background-image: url("../../assets/images/banner/banner.png");
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  color: #212B35;
+  .banner-dlab-bnr-inr {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .banner-dlab-bnr-inr-entry {
+    height: 500px;
+    vertical-align: middle;
+    display: table-cell;
+    padding-top: 350px;
+    .breadcrumb-item{
+        &::before{
+            color: #212B35 !important;
+        }
+        color: #212B35;
+        a{
+            color: #212B35;
+        }
+    }
+  }
+}

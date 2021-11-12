@@ -1,7 +1,6 @@
-import Slider from "react-slick";
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import pic3 from './../assets/images/main-slider/slider1/pic3.png';
-import pic4 from './../assets/images/main-slider/slider1/pic4.png';
 import pic2 from './../assets/images/main-slider/slider1/pic2.png';
 import pic1 from './../assets/images/move/pic1.png';
 

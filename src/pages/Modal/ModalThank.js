@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import { Modal, ModalBody } from "reactstrap";
 import "./ModalThank.scss";
 function ModalThank(props) {
     const { isShowModalThank, setIsShowModalThank } = props;

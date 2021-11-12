@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import bg1 from "./../assets/images/background/bg10.png";
 import bg from "./../assets/images/logo-white.png";

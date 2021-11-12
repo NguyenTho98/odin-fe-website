@@ -13,16 +13,13 @@ import "./Main.scss";
 import './../icons/_fontawesome-all.scss';
 function MainChatBot(props) {
     const [showChatBot, setShowChatBot] = useState(false);
-    const [showChatContent, setShowChatContent] = useState(false);
     const [currentPage, setCurrentPage] = useState(CurrentPage.HOME);
     let phoneNumber = '';
     useEffect(() => {
         phoneNumber = localStorage.getItem('phoneNumber')
         if (phoneNumber) {            
-            setShowChatContent(true)            
         } else {
             localStorage.setItem("firsttime",true)
-            setShowChatContent(false)      
         }
     }, [])
  
@@ -30,9 +27,7 @@ function MainChatBot(props) {
         setShowChatBot(data)
     };
 
-    const receiveInfo = (data) => {
-        setShowChatContent(data)
-    };
+  
     const renderContentPage = () => {
         switch (currentPage) {
             case CurrentPage.HOME:

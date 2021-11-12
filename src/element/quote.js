@@ -69,7 +69,7 @@ function Quote(props) {
             },
           }
         ).then((json) => {
-          if (json && json.status == 200) {
+          if (json && json.status === 200) {
             setIsShowModalThank(true);
           }
         });

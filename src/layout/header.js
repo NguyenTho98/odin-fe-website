@@ -1,6 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import logo from './../assets/images/logo.png';
 import { useState } from 'react';
+import {
+   Link
+} from "react-router-dom";
 import './header.scss';
 function Header() {
     const [show, setShow] = useState(false);
@@ -26,7 +31,7 @@ function Header() {
                         {/* <!-- Extra Nav --> */}
                         <div className="extra-nav">
                             <div className="extra-cell">
-                                <a href="#"><a className="btn btn-link d-inline-flex align-items-center"><i className="fa fa-angle-right m-r10"></i>Đăng ký</a></a>
+                                <Link to="/register"><a className="btn btn-link d-inline-flex align-items-center"><i className="fa fa-angle-right m-r10"></i>Đăng ký</a></Link>
                             </div>
                         </div>
                         <div className={`header-nav navbar-collapse collapse justify-content-end ${show ? "show" : ""}`} id="navbarNavDropdown">
@@ -35,38 +40,30 @@ function Header() {
                             </div>
                             <ul className="nav navbar-nav navbar">	
                                 <li><a href="/"><a>Trang chủ</a></a></li>
-                                <li className={`${open === "about" ? "open" : ""}`}><a  onClick={() => setOpen("about")}><span>Giới thiệu</span><i className="fa fa-chevron-down"></i></a>
+                                <li className={`${open === "about" ? "open" : ""}`}><a onClick={() => setOpen("about")}><span>Giới thiệu</span><i className="fa fa-chevron-down"></i></a>
                                     <ul className="sub-menu">
-                                        <li><a href="/about-us-1"><a>About Us</a></a></li>
-										<li><a href="/faq-1"><a>Faq</a></a></li>
-                                        <li><a href="/pricing-table-1"><a>Pricing Table</a></a></li>
-										<li><a href="/team-1"><a>Team</a></a></li>
-                                        <li><a href="/coming-soon"><a>Coming Soon</a></a></li>
-                                        <li><a href="/error-404"><a>Error 404</a></a></li>
-                                        <li><a href="/sitedown"><a>Site Down</a></a></li>
+                                        <Link to="/about"><li><a href="/"><a>Về anh ngữ Odin</a></a></li></Link>
+										<Link to="/logo"><li><a href="/"><a>Logo Odin</a></a></li></Link>
+                                        <li><a href="/"><a>Phương pháp đào tạo</a></a></li>
+                                        <li><a href="/"><a>Tuyển dụng</a></a></li>
                                     </ul>
                                 </li>
                                 <li className={`${open === "services" ? "open" : ""}`}><a onClick={() => setOpen("services")}><span>Đội ngũ</span><i className="fa fa-chevron-down"></i></a>
                                     <ul className="sub-menu">
                 									
-										<li><a href="/services-1"><a>Services</a></a></li>
-										<li><a href="/services-details-1"><a>Services Details</a></a></li>
+										<li><a href="/"><a>Đào tạo đội ngũ</a></a></li>
+										<li><a href="/"><a>Đội ngũ giảng viên</a></a></li>
                                     </ul>
                                 </li>
                                 <li className={`${open === "blog" ? "open" : ""}`}><a onClick={() => setOpen("blog")}><span>Khóa học</span><i className="fa fa-chevron-down"></i></a>
                                     <ul className="sub-menu">
-                                        <li><a href="/blog-large-right-sidebar"><a>Large Right Sidebar</a></a></li>
-										<li><a href="/blog-details-1"><a>Blog Details</a></a></li>
+                                        <li><a href="/"><a>New BBST</a></a></li>
+										<li><a href="/"><a>Giao Tiếp</a></a></li>
+										<li><a href="/"><a>TO1, TO2</a></a></li>
+										<li><a href="/"><a>IE1, IE2, IE3, IE4</a></a></li>
                                     </ul>
                                 </li>
-                                <li className={`${open === "blog1" ? "open" : ""}`}><a onClick={() => setOpen("blog")}><span>Lịch khai giảng</span><i className="fa fa-chevron-down"></i></a>
-                                    <ul className="sub-menu">
-                                        <li><a href="/blog-large-right-sidebar"><a>Large Right Sidebar</a></a></li>
-										<li><a href="/blog-details-1"><a>Blog Details</a></a></li>
-                                    </ul>
-                                </li>
-								
-								<li><a href="/contact-us-1"><a>Tuyển dụng</a></a></li>
+                                <li><a href="/"><a>Lịch khai giảng</a></a></li>
                             </ul>
                             <div className="dlab-social-icon">
                                 <ul>

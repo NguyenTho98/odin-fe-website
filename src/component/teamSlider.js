@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import Slider from "react-slick";
 import React from 'react';
 import pic1 from "./../assets/images/team/pic1.jpg";

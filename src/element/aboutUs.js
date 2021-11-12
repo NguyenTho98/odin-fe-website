@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import img4 from "./../assets/images/about/img4.png";
 function AboutUs() {

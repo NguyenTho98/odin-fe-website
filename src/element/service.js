@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+/* eslint-disable no-script-url */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import {  useState } from "react";
 // import { WOW } from "wowjs";
 import React from 'react';
 import bg1 from './../assets/images/background/bg1.png';
